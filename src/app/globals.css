@@ -17,13 +17,13 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 24px;
+ /* color: #ffffff; */
+ /* background-color: #0D0D0DF2; */
+ ;
 }
 
 @layer utilities {
@@ -31,3 +31,35 @@ body {
     text-wrap: balance;
   }
 }
+
+.hero-section{
+  background-image: url('/menuList1.png');
+  width: 100%;
+  height: 50vh;
+  background-position: right;
+}
+
+.bg-food {
+  background-image: url('/foodItems.png');
+  background-size: cover; /* Ensure the background covers the container */
+  background-position: center; /* Center the background */
+  position: relative;
+  color: #ffffff;
+}
+
+.bg-food::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1; /* Below content but above the background */
+}
+
+.bg-food > * {
+  position: relative; /* Bring content above the overlay */
+  z-index: 2;
+}
+
