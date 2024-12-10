@@ -16,65 +16,68 @@ export default function Home() {
   return (
     // hero section of homepage
     <>
-      <div className=" bg-[#0D0D0DF2] text-[#ffffff]  " >
+      <div className=" w-[100%] bg-[#0D0D0DF2] text-[#ffffff]  " >
 
       
 
-      <div className="flex flex-col lg:flex-row py-16 max-w-7xl m-auto p-5 ">
-        {/* Right Section for Content */}
-        <div className="flex-1 p-0 m-0 flex justify-center items-center md:pl-8 md:pr-0">
-          {/* First Grid - Vertical Line and Icons */}
-          <div className="hidden md:flex flex-col justify-between items-center relative sm:w-1/12">
-            {/* Top Vertical Line */}
-            <div className="w-px h-36 bg-white" />
+      <div className="flex justify-center items-center min-h-screen ">
+  <div className="flex flex-col lg:flex-row py-16 w-full max-w-[1280px] m-auto px-5">
+    {/* Right Section for Content */}
+    <div className="flex-1 p-0 flex justify-center items-center md:pl-8 md:pr-0">
+      {/* First Grid - Vertical Line and Icons */}
+      <div className="hidden md:flex flex-col justify-between items-center relative sm:w-1/12">
+        {/* Top Vertical Line */}
+        <div className="w-px h-36 bg-white" />
 
-            {/* Social Media Icons */}
-            <div className="flex flex-col gap-4 items-center mt-8 mb-8">
-              <button className="text-white">
-                <FaFacebookF size={20} />
-              </button>
-              <button className="text-[#FF9F0D]">
-                <FaTwitter size={20} />
-              </button>
-              <button className="text-white">
-                <FaPinterestP size={20} />
-              </button>
-            </div>
-
-            {/* Bottom Vertical Line */}
-            <div className="w-px h-36 bg-white" />
-          </div>
-
-          {/* Second Grid - Content */}
-          <div className="flex flex-col justify-center items-center  sm:items-start text-center sm:text-left pl-4 sm:pl-8 pr-4 sm:pr-0">
-            <h4 className=" font-cursive text-4xl mb-5 text-primary">
-              It's Quick & Amusing!
-            </h4>
-
-            <h1 className="text-5xl mb-5">
-              <span className="text-[#FF9F0D]">Th</span>e art of speed food
-              quality
-            </h1>
-            <p className="text-xl mb-3">
-              This is a brief description of the site. You can add any content
-              here, such as an intro or call to action.
-            </p>
-            {/* button here  */}
-            <Button title={"Getting Started"} />
-          </div>
+        {/* Social Media Icons */}
+        <div className="flex flex-col gap-4 items-center mt-8 mb-8">
+          <button className="text-white">
+            <FaFacebookF size={20} />
+          </button>
+          <button className="text-[#FF9F0D]">
+            <FaTwitter size={20} />
+          </button>
+          <button className="text-white">
+            <FaPinterestP size={20} />
+          </button>
         </div>
 
-        {/* Left Section for Image */}
-        <div className="flex-1 relative w-full h-72 sm:h-[60vh]">
-          <Image
-            src="/image1.png" // Ensure this path is correct
-            alt="Hero Image"
-            layout="fill" // Makes the image fill the container
-            objectFit="cover" // Ensure the image covers the area without distortion
-            className="max-w-full h-auto "
-          />
-        </div>
+        {/* Bottom Vertical Line */}
+        <div className="w-px h-36 bg-white" />
       </div>
+
+      {/* Second Grid - Content */}
+      <div className="flex flex-col justify-center items-center sm:items-start text-center sm:text-left pl-4 sm:pl-8 pr-4 sm:pr-0">
+        <h4 className="font-cursive text-4xl mb-5 text-primary">
+          It's Quick & Amusing!
+        </h4>
+
+        <h1 className="text-5xl mb-5">
+          <span className="text-[#FF9F0D]">Th</span>e art of speed food
+          quality
+        </h1>
+        <p className="text-xl mb-3">
+          This is a brief description of the site. You can add any content
+          here, such as an intro or call to action.
+        </p>
+        {/* button here */}
+        <Button title={"Getting Started"} />
+      </div>
+    </div>
+
+    {/* Left Section for Image */}
+    <div className="flex-1 relative w-full h-72 sm:h-[60vh]">
+      <Image
+        src="/image1.png" // Ensure this path is correct
+        alt="Hero Image"
+        layout="fill" // Makes the image fill the container
+        objectFit="cover" // Ensure the image covers the area without distortion
+        className="max-w-full h-auto"
+      />
+    </div>
+  </div>
+</div>
+
 
       {/* about section */}
       <div className=" max-w-7xl m-auto  ">
@@ -135,37 +138,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mt-[100px] max-w-7xl m-auto ">
-        <div className=" w-full flex justify-center items-center flex-col ">
-          <h3 className="text-4xl text-primary font-cursive ">chefs</h3>
-          <h2 className="text-4xl">
-            {" "}
-            <span className="text-[#FF9F0D]">Me</span>et our chefs{" "}
-          </h2>
-        </div>
-
-        <div>
-          <div className="flex mt-[50px] flex-col sm:flex-col gap-5 p-10 items-center lg:items-start lg:flex-row  ">
-            {Array(4)
-              .fill(0)
-              .map((_, index) => (
-                <div key={index} className="flex gap-3 mb-3 items-center  ">
-                  {/* Image Container */}
-                  <div className="relative flex-shrink-0 h-[300px] w-[270px]">
-                    <Image
-                      src={`/chef${index + 1}.png`} // Dynamically selecting images from menu2.png to menu4.png
-                      alt={`chef ${index + 1}`}
-                      unoptimized
-                      layout="fill"
-                      objectFit="contain"
-                      className="z-30"
-                    />
-                  </div>
-                </div>
-              ))}
-          </div>
-        </div>
-      </div>
+                 
 
       <div className=" mt-[100px] max-w-7xl m-auto p-10 ">
         <div>
@@ -311,7 +284,7 @@ export default function Home() {
                     <button className="text-gray-400 text-lg hover:text-yellow-500">
                       <AiOutlineLike />
                     </button>
-                    <button className="text-gray-400 text-lg text-yellow-500">
+                    <button className=" text-lg text-yellow-500">
                       <LiaCommentSolid />
                     </button>
                     <button className="text-gray-400 text-lg hover:text-yellow-500">
