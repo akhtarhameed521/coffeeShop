@@ -250,7 +250,7 @@ export default function Home() {
           <span className="text-yellow-500">Latest</span> News & Blog
         </h2>
       </div>
-      <div className="flex gap-8 justify-center">
+      <div className="flex flex-col lg:flex-row items-center gap-8 justify-center">
         {Array(3)
           .fill(0)
           .map((_, index) => (
@@ -259,7 +259,7 @@ export default function Home() {
               className="bg-black border border-gray-600 rounded-lg overflow-hidden shadow-md"
             >
               {/* Image Section */}
-              <div className="relative h-[300px] w-[400px]">
+              <div className="relative h-[300px] w-full  lg:w-[400px]">
                 <Image
                   src={`/blog${index + 1}.png`} // Use images like blog1.png, blog2.png, blog3.png
                   alt={`blog${index + 1}`}
