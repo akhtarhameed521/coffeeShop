@@ -10,7 +10,7 @@ export default function page() {
     <>
       <HeroSection title={'menu'} header={"our menu"} />
       <div className=" max-w-7xl m-auto  capitalize p-10 ">
-        <div className="flex flex-col lg:flex-row gap-20 mt-[100px] ">
+        <div className="flex flex-col items-center lg:flex-row gap-20 mt-[100px] p-10 ">
           <div className=" relative w-full h-[700px] lg:w-[800px] ">
             <Image src={"/menuList2.png"} layout="fill" />
           </div>
@@ -93,7 +93,7 @@ export default function page() {
             <hr className=" w-full h-[3px] mt-7 bg-slate-100 " />
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row gap-20 mt-[100px] ">
+        <div className="flex flex-col lg:flex-row gap-20 mt-[100px] items-center p-10 ">
           
           <div className="w-full">
             <div className="relative">
@@ -184,7 +184,7 @@ export default function page() {
           <FoodItems/>
       </div>
       <div className="max-w-7xl m-auto " >
-      <div className="flex flex-col lg:flex-row gap-20 mt-[100px] ">
+      <div className="flex flex-col lg:flex-row gap-20 mt-[100px] items-center p-10 ">
           <div className=" relative w-full h-[700px] lg:w-[800px] ">
             <Image src={"/menuList2.png"} layout="fill" />
           </div>
@@ -267,7 +267,7 @@ export default function page() {
             <hr className=" w-full h-[3px] mt-7 bg-slate-100 " />
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row gap-20 mt-[100px] ">
+        <div className="flex flex-col lg:flex-row gap-20 mt-[100px] items-center p-10 ">
           
           <div className="w-full">
             <div className="relative">
@@ -354,7 +354,7 @@ export default function page() {
       </div>
 
       <div className=" mt-[100px] p-10 " >
-        <div className=" w-full flex flex-col items-center justify-center " >
+        <div className=" w-full flex flex-col items-center justify-center  p-10 " >
           <h3>Partners & Clients</h3>
           <h2 className="mt-2 text-2xl font-bold" >We work with the best pepole</h2>
         </div>
