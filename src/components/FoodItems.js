@@ -4,7 +4,7 @@ import "../app/globals.css"
 
 export default function FoodItems() {
   return (
-    <div className=' bg-food hidden lg:flex flex-col justify-center  h-[50vh] capitalize items-center gap-52 lg:flex-row text-center mt-[100px] w-full p-10 '>
+    <div className=' bg-food flex flex-col  lg:flex-row justify-center h-auto lg:h-[50vh] capitalize items-center gap-52  text-center mt-[100px] w-full p-10 '>
         {/* First Item */}
         <div className='flex flex-col  items-center'>
             <div className='relative h-[100px] w-[100px]'>
