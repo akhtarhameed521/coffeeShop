@@ -1,4 +1,4 @@
-import HeroSection from "@/components/HeroSection";
+import HeroSection from "../../components/HeroSection";
 import Image from "next/image";
 import React from "react";
 import { FaStar } from "react-icons/fa6";

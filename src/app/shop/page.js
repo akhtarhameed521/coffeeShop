@@ -12,7 +12,7 @@ import {
   Pagination,
   Slider,
 } from "@mui/material";
-import HeroSection from "@/components/HeroSection";
+import HeroSection from "../../components/HeroSection";
 import { IoIosStar } from "react-icons/io";
 import { AiOutlineSearch } from "react-icons/ai";
 import { useRouter } from "next/navigation";

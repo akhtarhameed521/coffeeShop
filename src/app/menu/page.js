@@ -1,4 +1,4 @@
-import HeroSection from "@/components/HeroSection";
+import HeroSection from "../../components/HeroSection";
 import React from "react";
 import "../../app/globals.css";
 import Image from "next/image";
