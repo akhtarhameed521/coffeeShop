@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className=" text-white bg-[#0D0D0DF2] mt-[100px]">
       <div className="max-w-7xl m-auto p-10 " >
-      <div className="flex flex-col md:flex-row items-center justify-between mb-10">
+      <div className="flex flex-col lg:flex-row items-center justify-between mb-10">
         <div className="text-center md:text-left">
           <h2 className=" text-3xl font-bold mb-2">
             <span className="text-yellow-500">St</span>ill You Need Our Support?
@@ -13,13 +13,13 @@ export default function Footer() {
             Don’t wait, make a smart & logical quote here. It's pretty easy.
           </p>
         </div>
-        <div className="mt-5 md:mt-0 ">
+        <div className="  flex  mt-5 ">
           <input
             type="email"
             placeholder="Enter Your Email"
-            className="px-4 py-2 rounded-l-md bg-yellow-500 text-white focus:outline-none"
+            className="px-4 py-2 rounded-l-md bg-yellow-500 text-white focus:outline-none  "
           />
-          <button className="px-6 py-2 bg-white text-black rounded-r-md font-bold">
+          <button className="  px-1 py-1  sm:px-6 sm:py-2 bg-white text-black rounded-r-md font-bold">
             Subscribe Now
           </button>
         </div>

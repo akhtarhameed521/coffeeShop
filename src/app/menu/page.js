@@ -11,23 +11,23 @@ export default function page() {
       <HeroSection title={'menu'} header={"our menu"} />
       <div className=" max-w-7xl m-auto  capitalize p-10 ">
         <div className="flex flex-col items-center lg:flex-row gap-20 mt-[100px] p-10 ">
-          <div className=" relative w-full h-[700px] lg:w-[800px] ">
+          <div className=" relative w-full h-[600px] lg:w-[800px] ">
             <Image src={"/menuList2.png"} layout="fill" />
           </div>
           <div className="w-full">
-            <div className="relative">
+            <div className="relative  ">
               <Image src={"/Coffee.png"} height={20} width={20} />
             </div>
-            <h2 className="mt-[20px] text-[40px] font-[700]  ">starter Menu</h2>
+            <h2 className="mt-[10px] text-[30px] font-[700] leading-10 ">starter Menu</h2>
             <div className=" flex w-full justify-between items-center ">
               <div>
-                <h3 className=" mt-[30px] text-[24px] font-bold text-[#333333] ">
+                <h3 className=" mt-[10px] text-[24px] font-bold text-[#333333] ">
                   Alder Grilled Chinook Salmon
                 </h3>
                 <h4 className=" mt-[15px] text-[16px] text-[#4F4F4F] ">
                   Toasted French bread topped with romano, cheddar
                 </h4>
-                <h2 className=" mt-[15px] text-[16px] text-[#828282] ">
+                <h2 className=" mt-[10px] text-[16px] text-[#828282] ">
                   {" "}
                   560 Cal{" "}
                 </h2>
@@ -36,16 +36,16 @@ export default function page() {
                 <h3 className=" text-primary text-[24px] font-bold ">32$</h3>
               </div>
             </div>
-            <hr className=" w-full h-[3px] mt-7 bg-slate-100 " />
+            <hr className=" w-full h-[3px] mt-5 bg-slate-100 " />
             <div className=" flex w-full justify-between items-center ">
               <div>
-                <h3 className=" mt-[20px] text-[24px] font-bold text-[#333333] ">
+                <h3 className=" mt-[10px] text-[24px] font-bold text-[#333333] ">
                   Alder Grilled Chinook Salmon
                 </h3>
                 <h4 className=" mt-[15px] text-[16px] text-[#4F4F4F] ">
                   Toasted French bread topped with romano, cheddar
                 </h4>
-                <h2 className=" mt-[15px] text-[16px] text-[#828282] ">
+                <h2 className=" mt-[10px] text-[16px] text-[#828282] ">
                   {" "}
                   560 Cal{" "}
                 </h2>
@@ -57,13 +57,13 @@ export default function page() {
             <hr className=" w-full h-[3px] mt-7 bg-slate-100 " />
             <div className=" flex w-full justify-between items-center ">
               <div>
-                <h3 className=" mt-[20px] text-[24px] font-bold text-[#333333] ">
+                <h3 className=" mt-[10px] text-[24px] font-bold text-[#333333] ">
                   Alder Grilled Chinook Salmon
                 </h3>
-                <h4 className=" mt-[20px] text-[16px] text-[#4F4F4F] ">
+                <h4 className=" mt-[15px] text-[16px] text-[#4F4F4F] ">
                   Toasted French bread topped with romano, cheddar
                 </h4>
-                <h2 className=" mt-[20px] text-[16px] text-[#828282] ">
+                <h2 className=" mt-[10px] text-[16px] text-[#828282] ">
                   {" "}
                   560 Cal{" "}
                 </h2>
@@ -72,16 +72,16 @@ export default function page() {
                 <h3 className=" text-primary text-[24px] font-bold ">32$</h3>
               </div>
             </div>
-            <hr className=" w-full h-[3px] mt-7 bg-slate-100 " />
+            <hr className=" w-full h-[3px] mt-4 bg-slate-100 " />
             <div className=" flex w-full justify-between items-center ">
               <div>
-                <h3 className=" mt-[20px] text-[24px] font-bold text-[#333333] ">
+                <h3 className=" mt-[10px] text-[24px] font-bold text-[#333333] ">
                   Alder Grilled Chinook Salmon
                 </h3>
-                <h4 className=" mt-[20px] text-[16px] text-[#4F4F4F] ">
+                <h4 className=" mt-[25px] text-[16px] text-[#4F4F4F] ">
                   Toasted French bread topped with romano, cheddar
                 </h4>
-                <h2 className=" mt-[20px] text-[16px] text-[#828282] ">
+                <h2 className=" mt-[10px] text-[16px] text-[#828282] ">
                   {" "}
                   560 Cal{" "}
                 </h2>
@@ -95,20 +95,20 @@ export default function page() {
         </div>
         <div className="flex flex-col lg:flex-row gap-20 mt-[100px] items-center p-10 ">
           
-          <div className="w-full">
-            <div className="relative">
+        <div className="w-full">
+            <div className="relative  ">
               <Image src={"/Coffee.png"} height={20} width={20} />
             </div>
-            <h2 className="mt-[20px] text-[40px] font-[700]  ">starter Menu</h2>
+            <h2 className="mt-[10px] text-[30px] font-[700] leading-10 ">starter Menu</h2>
             <div className=" flex w-full justify-between items-center ">
               <div>
-                <h3 className=" mt-[30px] text-[24px] font-bold text-[#333333] ">
+                <h3 className=" mt-[10px] text-[24px] font-bold text-[#333333] ">
                   Alder Grilled Chinook Salmon
                 </h3>
                 <h4 className=" mt-[15px] text-[16px] text-[#4F4F4F] ">
                   Toasted French bread topped with romano, cheddar
                 </h4>
-                <h2 className=" mt-[15px] text-[16px] text-[#828282] ">
+                <h2 className=" mt-[10px] text-[16px] text-[#828282] ">
                   {" "}
                   560 Cal{" "}
                 </h2>
@@ -117,16 +117,16 @@ export default function page() {
                 <h3 className=" text-primary text-[24px] font-bold ">32$</h3>
               </div>
             </div>
-            <hr className=" w-full h-[3px] mt-7 bg-slate-100 " />
+            <hr className=" w-full h-[3px] mt-5 bg-slate-100 " />
             <div className=" flex w-full justify-between items-center ">
               <div>
-                <h3 className=" mt-[20px] text-[24px] font-bold text-[#333333] ">
+                <h3 className=" mt-[10px] text-[24px] font-bold text-[#333333] ">
                   Alder Grilled Chinook Salmon
                 </h3>
                 <h4 className=" mt-[15px] text-[16px] text-[#4F4F4F] ">
                   Toasted French bread topped with romano, cheddar
                 </h4>
-                <h2 className=" mt-[15px] text-[16px] text-[#828282] ">
+                <h2 className=" mt-[10px] text-[16px] text-[#828282] ">
                   {" "}
                   560 Cal{" "}
                 </h2>
@@ -138,13 +138,13 @@ export default function page() {
             <hr className=" w-full h-[3px] mt-7 bg-slate-100 " />
             <div className=" flex w-full justify-between items-center ">
               <div>
-                <h3 className=" mt-[20px] text-[24px] font-bold text-[#333333] ">
+                <h3 className=" mt-[10px] text-[24px] font-bold text-[#333333] ">
                   Alder Grilled Chinook Salmon
                 </h3>
-                <h4 className=" mt-[20px] text-[16px] text-[#4F4F4F] ">
+                <h4 className=" mt-[15px] text-[16px] text-[#4F4F4F] ">
                   Toasted French bread topped with romano, cheddar
                 </h4>
-                <h2 className=" mt-[20px] text-[16px] text-[#828282] ">
+                <h2 className=" mt-[10px] text-[16px] text-[#828282] ">
                   {" "}
                   560 Cal{" "}
                 </h2>
@@ -153,16 +153,16 @@ export default function page() {
                 <h3 className=" text-primary text-[24px] font-bold ">32$</h3>
               </div>
             </div>
-            <hr className=" w-full h-[3px] mt-7 bg-slate-100 " />
+            <hr className=" w-full h-[3px] mt-4 bg-slate-100 " />
             <div className=" flex w-full justify-between items-center ">
               <div>
-                <h3 className=" mt-[20px] text-[24px] font-bold text-[#333333] ">
+                <h3 className=" mt-[10px] text-[24px] font-bold text-[#333333] ">
                   Alder Grilled Chinook Salmon
                 </h3>
-                <h4 className=" mt-[20px] text-[16px] text-[#4F4F4F] ">
+                <h4 className=" mt-[25px] text-[16px] text-[#4F4F4F] ">
                   Toasted French bread topped with romano, cheddar
                 </h4>
-                <h2 className=" mt-[20px] text-[16px] text-[#828282] ">
+                <h2 className=" mt-[10px] text-[16px] text-[#828282] ">
                   {" "}
                   560 Cal{" "}
                 </h2>
@@ -173,7 +173,7 @@ export default function page() {
             </div>
             <hr className=" w-full h-[3px] mt-7 bg-slate-100 " />
           </div>
-          <div className=" relative w-full h-[700px] lg:w-[800px] ">
+          <div className=" relative w-full h-[600px] lg:w-[800px] ">
             <Image src={"/menuList3.png"} layout="fill" />
           </div>
         </div>
@@ -185,20 +185,20 @@ export default function page() {
       </div>
       <div className="max-w-7xl m-auto " >
       <div className="flex flex-col lg:flex-row gap-20 mt-[100px] items-center p-10 ">
-          <div className=" relative w-full h-[700px] lg:w-[800px] ">
+          <div className=" relative w-full h-[600px] lg:w-[800px] ">
             <Image src={"/menuList2.png"} layout="fill" />
           </div>
           <div className="w-full">
             <div className="relative">
               <Image src={"/Coffee.png"} height={20} width={20} />
             </div>
-            <h2 className="mt-[20px] text-[40px] font-[700]  ">starter Menu</h2>
+            <h2 className="mt-[20px] text-[30px] font-[700]  ">starter Menu</h2>
             <div className=" flex w-full justify-between items-center ">
               <div>
-                <h3 className=" mt-[30px] text-[24px] font-bold text-[#333333] ">
+                <h3 className=" mt-[15px] text-[24px] font-bold text-[#333333] ">
                   Alder Grilled Chinook Salmon
                 </h3>
-                <h4 className=" mt-[15px] text-[16px] text-[#4F4F4F] ">
+                <h4 className=" mt-[10px] text-[16px] text-[#4F4F4F] ">
                   Toasted French bread topped with romano, cheddar
                 </h4>
                 <h2 className=" mt-[15px] text-[16px] text-[#828282] ">
@@ -213,10 +213,28 @@ export default function page() {
             <hr className=" w-full h-[3px] mt-7 bg-slate-100 " />
             <div className=" flex w-full justify-between items-center ">
               <div>
-                <h3 className=" mt-[20px] text-[24px] font-bold text-[#333333] ">
+                <h3 className=" mt-[10px] text-[24px] font-bold text-[#333333] ">
                   Alder Grilled Chinook Salmon
                 </h3>
                 <h4 className=" mt-[15px] text-[16px] text-[#4F4F4F] ">
+                  Toasted French bread topped with romano, cheddar
+                </h4>
+                <h2 className=" mt-[10px] text-[16px] text-[#828282] ">
+                  {" "}
+                  560 Cal{" "}
+                </h2>
+              </div>
+              <div>
+                <h3 className=" text-primary text-[24px] font-bold ">32$</h3>
+              </div>
+            </div>
+            <hr className=" w-full h-[3px] mt-7 bg-slate-100 " />
+            <div className=" flex w-full justify-between items-center ">
+              <div>
+                <h3 className=" mt-[10px] text-[24px] font-bold text-[#333333] ">
+                  Alder Grilled Chinook Salmon
+                </h3>
+                <h4 className=" mt-[10px] text-[16px] text-[#4F4F4F] ">
                   Toasted French bread topped with romano, cheddar
                 </h4>
                 <h2 className=" mt-[15px] text-[16px] text-[#828282] ">
@@ -231,31 +249,13 @@ export default function page() {
             <hr className=" w-full h-[3px] mt-7 bg-slate-100 " />
             <div className=" flex w-full justify-between items-center ">
               <div>
-                <h3 className=" mt-[20px] text-[24px] font-bold text-[#333333] ">
+                <h3 className=" mt-[10px] text-[24px] font-bold text-[#333333] ">
                   Alder Grilled Chinook Salmon
                 </h3>
-                <h4 className=" mt-[20px] text-[16px] text-[#4F4F4F] ">
+                <h4 className=" mt-[10px] text-[16px] text-[#4F4F4F] ">
                   Toasted French bread topped with romano, cheddar
                 </h4>
-                <h2 className=" mt-[20px] text-[16px] text-[#828282] ">
-                  {" "}
-                  560 Cal{" "}
-                </h2>
-              </div>
-              <div>
-                <h3 className=" text-primary text-[24px] font-bold ">32$</h3>
-              </div>
-            </div>
-            <hr className=" w-full h-[3px] mt-7 bg-slate-100 " />
-            <div className=" flex w-full justify-between items-center ">
-              <div>
-                <h3 className=" mt-[20px] text-[24px] font-bold text-[#333333] ">
-                  Alder Grilled Chinook Salmon
-                </h3>
-                <h4 className=" mt-[20px] text-[16px] text-[#4F4F4F] ">
-                  Toasted French bread topped with romano, cheddar
-                </h4>
-                <h2 className=" mt-[20px] text-[16px] text-[#828282] ">
+                <h2 className=" mt-[15px] text-[16px] text-[#828282] ">
                   {" "}
                   560 Cal{" "}
                 </h2>
@@ -269,20 +269,20 @@ export default function page() {
         </div>
         <div className="flex flex-col lg:flex-row gap-20 mt-[100px] items-center p-10 ">
           
-          <div className="w-full">
-            <div className="relative">
+        <div className="w-full">
+            <div className="relative  ">
               <Image src={"/Coffee.png"} height={20} width={20} />
             </div>
-            <h2 className="mt-[20px] text-[40px] font-[700]  ">starter Menu</h2>
+            <h2 className="mt-[10px] text-[30px] font-[700] leading-10 ">starter Menu</h2>
             <div className=" flex w-full justify-between items-center ">
               <div>
-                <h3 className=" mt-[30px] text-[24px] font-bold text-[#333333] ">
+                <h3 className=" mt-[10px] text-[24px] font-bold text-[#333333] ">
                   Alder Grilled Chinook Salmon
                 </h3>
                 <h4 className=" mt-[15px] text-[16px] text-[#4F4F4F] ">
                   Toasted French bread topped with romano, cheddar
                 </h4>
-                <h2 className=" mt-[15px] text-[16px] text-[#828282] ">
+                <h2 className=" mt-[10px] text-[16px] text-[#828282] ">
                   {" "}
                   560 Cal{" "}
                 </h2>
@@ -291,16 +291,16 @@ export default function page() {
                 <h3 className=" text-primary text-[24px] font-bold ">32$</h3>
               </div>
             </div>
-            <hr className=" w-full h-[3px] mt-7 bg-slate-100 " />
+            <hr className=" w-full h-[3px] mt-5 bg-slate-100 " />
             <div className=" flex w-full justify-between items-center ">
               <div>
-                <h3 className=" mt-[20px] text-[24px] font-bold text-[#333333] ">
+                <h3 className=" mt-[10px] text-[24px] font-bold text-[#333333] ">
                   Alder Grilled Chinook Salmon
                 </h3>
                 <h4 className=" mt-[15px] text-[16px] text-[#4F4F4F] ">
                   Toasted French bread topped with romano, cheddar
                 </h4>
-                <h2 className=" mt-[15px] text-[16px] text-[#828282] ">
+                <h2 className=" mt-[10px] text-[16px] text-[#828282] ">
                   {" "}
                   560 Cal{" "}
                 </h2>
@@ -312,13 +312,13 @@ export default function page() {
             <hr className=" w-full h-[3px] mt-7 bg-slate-100 " />
             <div className=" flex w-full justify-between items-center ">
               <div>
-                <h3 className=" mt-[20px] text-[24px] font-bold text-[#333333] ">
+                <h3 className=" mt-[10px] text-[24px] font-bold text-[#333333] ">
                   Alder Grilled Chinook Salmon
                 </h3>
-                <h4 className=" mt-[20px] text-[16px] text-[#4F4F4F] ">
+                <h4 className=" mt-[15px] text-[16px] text-[#4F4F4F] ">
                   Toasted French bread topped with romano, cheddar
                 </h4>
-                <h2 className=" mt-[20px] text-[16px] text-[#828282] ">
+                <h2 className=" mt-[10px] text-[16px] text-[#828282] ">
                   {" "}
                   560 Cal{" "}
                 </h2>
@@ -327,16 +327,16 @@ export default function page() {
                 <h3 className=" text-primary text-[24px] font-bold ">32$</h3>
               </div>
             </div>
-            <hr className=" w-full h-[3px] mt-7 bg-slate-100 " />
+            <hr className=" w-full h-[3px] mt-4 bg-slate-100 " />
             <div className=" flex w-full justify-between items-center ">
               <div>
-                <h3 className=" mt-[20px] text-[24px] font-bold text-[#333333] ">
+                <h3 className=" mt-[10px] text-[24px] font-bold text-[#333333] ">
                   Alder Grilled Chinook Salmon
                 </h3>
-                <h4 className=" mt-[20px] text-[16px] text-[#4F4F4F] ">
+                <h4 className=" mt-[25px] text-[16px] text-[#4F4F4F] ">
                   Toasted French bread topped with romano, cheddar
                 </h4>
-                <h2 className=" mt-[20px] text-[16px] text-[#828282] ">
+                <h2 className=" mt-[10px] text-[16px] text-[#828282] ">
                   {" "}
                   560 Cal{" "}
                 </h2>
@@ -347,7 +347,7 @@ export default function page() {
             </div>
             <hr className=" w-full h-[3px] mt-7 bg-slate-100 " />
           </div>
-          <div className=" relative w-full h-[700px] lg:w-[800px] ">
+          <div className=" relative w-full h-[600px] lg:w-[800px] ">
             <Image src={"/menuList3.png"} layout="fill" />
           </div>
         </div>

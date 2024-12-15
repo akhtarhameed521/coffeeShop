@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import {
   Box,
-  TextField,
   IconButton,
   Grid,
   Drawer,
@@ -39,28 +38,43 @@ export default function Navbar() {
   };
 
   return (
-    <div className="bg-[#0D0D0DF2]">
-      <div className="max-w-7xl m-auto">
-        <Box
-          component="nav"
-          sx={{
-            padding: "1rem",
-            position: "relative",
-          }}
-        >
+  
+      <Box
+        component="nav"
+        sx={{
+          padding: "1rem",
+          position: "sticky",
+          top: 0, // Set the top offset
+          zIndex: 1000, // Ensure it stays on top of other elements
+          background: "#0D0D0DF2",
+        }}
+      >
+        <div className="max-w-7xl m-auto">
+          {/* Center Logo */}
           <Box
             component={"div"}
             sx={{
               marginTop: "20px",
               width: "100%",
-              display: {xs:  "none", md: "none", lg: "flex"},
+              display: { xs: "none", md: "none", lg: "flex" },
               justifyContent: "center",
               marginBottom: "10px",
             }}
           >
-            <Image src={"/Foodtuck.png"} height={100} width={100} alt="Foodtuck Logo" />
+            <Image
+              src={"/Foodtuck.png"}
+              height={100}
+              width={100}
+              alt="Foodtuck Logo"
+            />
           </Box>
-          <Grid container alignItems="center" spacing={2} justifyContent="space-between">
+
+          <Grid
+            container
+            alignItems="center"
+            spacing={2}
+            justifyContent="space-between"
+          >
             {/* Links Section */}
             <Grid item xs={12} md={8}>
               {!isMobile ? (
@@ -101,60 +115,61 @@ export default function Navbar() {
               )}
             </Grid>
 
-            {/* Search Section and Shopping Bag Icon */}
-            <Grid item xs={12} md={4} container justifyContent="flex-end" alignItems="center" spacing={2}>
-              <Grid item xs={8}>
-                <Box
-                  sx={{
-                    position: "relative",
-                    display: "flex",
-                    alignItems: "center",
-                    width: "100%",
-                    borderRadius: "27px",
-                    border: "1px solid #FF9F0D", // Orange border
-                  }}
-                >
-                  <TextField
-                    variant="outlined"
-                    placeholder="Search..."
-                    fullWidth
+            {/* Search Section and Shopping Bag Icon for Larger Screens */}
+            {!isMobile && (
+              <Grid
+                item
+                xs={12}
+                md={4}
+                container
+                justifyContent="flex-end"
+                alignItems="center"
+                spacing={2}
+              >
+                <Grid item xs={8}>
+                  <Box
                     sx={{
-                      height: "50px", // Reduced height
-                      borderRadius: "inherit",
-                      input: {
-                        height: "100%",
-                        color: "#ffffff",
-                        display: "flex",
-                        alignItems: "center",
-                        lineHeight: "32px", // Ensure vertical centering of text
-                      },
-                      fieldset: {
-                        border: "none",
-                      },
-                    }}
-                  />
-                  <IconButton
-                    sx={{
-                      position: "absolute",
-                      right: "0",
-                      height: "100%",
-                      width: "42px", // Match the new input height
-                      borderRadius: "0 27px 27px 0",
-                      "&:hover": { backgroundColor: "#0056b3" },
+                      position: "relative",
+                      display: "flex",
+                      alignItems: "center",
+                      width: "100%",
+                      borderRadius: "27px",
+                      border: "1px solid #FF9F0D", // Orange border
                     }}
                   >
-                    <LuSearch style={{ color: "white" }} />
+                    <input
+                      placeholder="Search..."
+                      style={{
+                        width: "100%",
+                        height: "50px",
+                        borderRadius: "27px",
+                        border: "none",
+                        paddingLeft: "10px",
+                        color: "#ffffff",
+                        backgroundColor: "transparent",
+                      }}
+                    />
+                    <IconButton
+                      sx={{
+                        position: "absolute",
+                        right: "0",
+                        height: "100%",
+                        width: "42px", // Match the new input height
+                        borderRadius: "0 27px 27px 0",
+                        "&:hover": { backgroundColor: "#0056b3" },
+                      }}
+                    >
+                      <LuSearch style={{ color: "white" }} />
+                    </IconButton>
+                  </Box>
+                </Grid>
+                <Grid item xs={4}>
+                  <IconButton>
+                    <MdOutlineShoppingBag style={{ color: "white" }} />
                   </IconButton>
-                </Box>
+                </Grid>
               </Grid>
-
-              {/* Shopping Bag Icon */}
-              <Grid item xs={4}>
-                <IconButton>
-                  <MdOutlineShoppingBag style={{ color: "white" }} />
-                </IconButton>
-              </Grid>
-            </Grid>
+            )}
           </Grid>
 
           {/* Drawer for Mobile Off-canvas */}
@@ -174,22 +189,70 @@ export default function Navbar() {
             }}
           >
             <Box role="presentation" onClick={toggleDrawer}>
-              <Box sx={{ display: "flex", justifyContent: "center", marginBottom: "20px" }}>
-                <Image src={"/Foodtuck.png"} height={100} width={100} alt="Foodtuck Logo" />
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  marginBottom: "20px",
+                }}
+              >
+                <Image
+                  src={"/Foodtuck.png"}
+                  height={100}
+                  width={100}
+                  alt="Foodtuck Logo"
+                />
               </Box>
               <List>
                 {menuItems.map((item) => (
                   <ListItem button key={item.name}>
                     <Link href={item.href} passHref>
-                      <ListItemText primary={item.name} sx={{ color: "white" }} />
+                      <ListItemText
+                        primary={item.name}
+                        sx={{ color: "white" }}
+                      />
                     </Link>
                   </ListItem>
                 ))}
+                {/* Add Search Input and Shopping Bag in Drawer */}
+                <ListItem>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      width: "100%",
+                      borderRadius: "27px",
+                      border: "1px solid #FF9F0D",
+                      marginBottom: "1rem",
+                    }}
+                  >
+                    <input
+                      placeholder="Search..."
+                      style={{
+                        width: "100%",
+                        height: "40px",
+                        borderRadius: "27px",
+                        border: "none",
+                        paddingLeft: "10px",
+                        color: "#ffffff",
+                        backgroundColor: "transparent",
+                      }}
+                    />
+                    <IconButton>
+                      <LuSearch style={{ color: "white" }} />
+                    </IconButton>
+                  </Box>
+                </ListItem>
+                <ListItem>
+                  <IconButton>
+                    <MdOutlineShoppingBag style={{ color: "white" }} />
+                  </IconButton>
+                </ListItem>
               </List>
             </Box>
           </Drawer>
-        </Box>
-      </div>
-    </div>
+        </div>
+      </Box>
+  
   );
 }

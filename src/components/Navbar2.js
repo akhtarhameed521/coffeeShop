@@ -10,6 +10,7 @@ import {
   ListItemText,
   useMediaQuery,
   useTheme,
+  Divider,
 } from "@mui/material";
 import { LuSearch } from "react-icons/lu";
 import { MdOutlineShoppingBag, MdMenu, MdOutlineAccountCircle } from "react-icons/md";
@@ -41,7 +42,9 @@ export default function Navbar2() {
       component="nav"
       sx={{
         padding: "1rem",
-        position: "relative",
+        position: "sticky",
+        top: 0,
+        zIndex: 10,
         background: "#0D0D0DF2",
         color: "#fff",
       }}
@@ -49,11 +52,13 @@ export default function Navbar2() {
       <div className="max-w-7xl m-auto">
         <Grid container alignItems="center" justifyContent="space-between">
           {/* Section 1: Logo */}
-          <Grid item xs={4} md={2}>
-            <Box sx={{ display: "flex", justifyContent: "flex-start" }}>
-              <Image src={"/Foodtuck.png"} height={100} width={100} alt="Foodtuck Logo" />
-            </Box>
-          </Grid>
+          {!isMobile && (
+            <Grid item xs={4} md={2}>
+              <Box sx={{ display: "flex", justifyContent: "flex-start" }}>
+                <Image src={"/Foodtuck.png"} height={100} width={100} alt="Foodtuck Logo" />
+              </Box>
+            </Grid>
+          )}
 
           {/* Section 2: Navigation Links */}
           <Grid item xs={8} md={6}>
@@ -95,24 +100,26 @@ export default function Navbar2() {
           </Grid>
 
           {/* Section 3: Icons */}
-          <Grid item xs={12} md={4} container justifyContent="flex-end" alignItems="center" spacing={2}>
-            {/* Three Icons: Search, Shopping Bag, User Account */}
-            <Grid item>
-              <IconButton sx={{ color: "white", "&:hover": { color: "#FF9F0D" } }}>
-                <LuSearch size={24} />
-              </IconButton>
+          {!isMobile && (
+            <Grid item xs={12} md={4} container justifyContent="flex-end" alignItems="center" spacing={2}>
+              {/* Three Icons: Search, Shopping Bag, User Account */}
+              <Grid item>
+                <IconButton sx={{ color: "white", "&:hover": { color: "#FF9F0D" } }}>
+                  <LuSearch size={24} />
+                </IconButton>
+              </Grid>
+              <Grid item>
+                <IconButton sx={{ color: "white", "&:hover": { color: "#FF9F0D" } }}>
+                  <MdOutlineShoppingBag size={24} />
+                </IconButton>
+              </Grid>
+              <Grid item>
+                <IconButton sx={{ color: "white", "&:hover": { color: "#FF9F0D" } }}>
+                  <MdOutlineAccountCircle size={24} />
+                </IconButton>
+              </Grid>
             </Grid>
-            <Grid item>
-              <IconButton sx={{ color: "white", "&:hover": { color: "#FF9F0D" } }}>
-                <MdOutlineShoppingBag size={24} />
-              </IconButton>
-            </Grid>
-            <Grid item>
-              <IconButton sx={{ color: "white", "&:hover": { color: "#FF9F0D" } }}>
-                <MdOutlineAccountCircle size={24} />
-              </IconButton>
-            </Grid>
-          </Grid>
+          )}
         </Grid>
       </div>
 
@@ -132,6 +139,11 @@ export default function Navbar2() {
         }}
       >
         <Box role="presentation" onClick={toggleDrawer}>
+          {/* Drawer Logo */}
+          <Box sx={{ textAlign: "center", marginBottom: "1rem" }}>
+            <Image src={"/Foodtuck.png"} height={80} width={80} alt="Foodtuck Logo" />
+          </Box>
+
           <List>
             {navLinks.map((item) => (
               <ListItem button key={item.name}>
@@ -148,6 +160,20 @@ export default function Navbar2() {
               </ListItem>
             ))}
           </List>
+          <Divider sx={{ background: "white", margin: "1rem 0" }} />
+
+          {/* Drawer Icons */}
+          <Box sx={{ display: "flex", justifyContent: "center", gap: "1rem" }}>
+            <IconButton sx={{ color: "white", "&:hover": { color: "#FF9F0D" } }}>
+              <LuSearch size={24} />
+            </IconButton>
+            <IconButton sx={{ color: "white", "&:hover": { color: "#FF9F0D" } }}>
+              <MdOutlineShoppingBag size={24} />
+            </IconButton>
+            <IconButton sx={{ color: "white", "&:hover": { color: "#FF9F0D" } }}>
+              <MdOutlineAccountCircle size={24} />
+            </IconButton>
+          </Box>
         </Box>
       </Drawer>
     </Box>
