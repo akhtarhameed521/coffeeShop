@@ -11,7 +11,7 @@ export default function page() {
       <HeroSection title={'menu'} header={"our menu"} />
       <div className=" max-w-7xl m-auto  capitalize p-10 ">
         <div className="flex flex-col items-center lg:flex-row gap-20 mt-[100px] p-10 ">
-          <div className=" relative w-full h-[600px] lg:w-[800px] ">
+          <div className=" relative w-full  h-[600px] lg:w-[800px] ">
             <Image src={"/menuList2.png"} layout="fill" />
           </div>
           <div className="w-full">
@@ -95,7 +95,7 @@ export default function page() {
         </div>
         <div className="flex flex-col lg:flex-row gap-20 mt-[100px] items-center p-10 ">
           
-        <div className="w-full">
+        <div className="w-full order-2 lg:order-1 ">
             <div className="relative  ">
               <Image src={"/Coffee.png"} height={20} width={20} />
             </div>
@@ -172,10 +172,10 @@ export default function page() {
               </div>
             </div>
             <hr className=" w-full h-[3px] mt-7 bg-slate-100 " />
-          </div>
-          <div className=" relative w-full h-[600px] lg:w-[800px] ">
-            <Image src={"/menuList3.png"} layout="fill" />
-          </div>
+        </div>
+            <div className=" relative w-full h-[600px] lg:w-[800px] order-1 lg:order-2 ">
+              <Image src={"/menuList3.png"} layout="fill" />
+            </div>
         </div>
 
         
@@ -269,7 +269,7 @@ export default function page() {
         </div>
         <div className="flex flex-col lg:flex-row gap-20 mt-[100px] items-center p-10 ">
           
-        <div className="w-full">
+        <div className="w-full order-2 lg:order-1 ">
             <div className="relative  ">
               <Image src={"/Coffee.png"} height={20} width={20} />
             </div>
@@ -347,7 +347,7 @@ export default function page() {
             </div>
             <hr className=" w-full h-[3px] mt-7 bg-slate-100 " />
           </div>
-          <div className=" relative w-full h-[600px] lg:w-[800px] ">
+          <div className=" relative w-full h-[600px] lg:w-[800px] order-1 lg:order-2 ">
             <Image src={"/menuList3.png"} layout="fill" />
           </div>
         </div>
