@@ -53,7 +53,7 @@ export default function Navbar() {
             sx={{
               marginTop: "20px",
               width: "100%",
-              display: "flex",
+              display: {xs:  "none", md: "none", lg: "flex"},
               justifyContent: "center",
               marginBottom: "10px",
             }}
