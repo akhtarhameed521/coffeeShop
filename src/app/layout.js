@@ -2,11 +2,11 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import Navbar from "@/components/Navbar";
 import "@fontsource/great-vibes";
-import Navbar2 from "@/components/Navbar2";
 import { usePathname } from "next/navigation";
-import Footer from "@/components/Footer";
+import Navbar from "../components/Navbar";
+import Navbar2 from "../components/Navbar2"; 
+import Footer from "../components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,11 +26,11 @@ export default function RootLayout({ children }) {
             <Navbar />
           
         ) : (
-          <Navbar2 />
+          <Navbar2  />
         )}
 
         {children}
-      <Footer/>
+      <Footer />
       </body>
     </html>
   );

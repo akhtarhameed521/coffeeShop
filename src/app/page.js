@@ -1,11 +1,11 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaPinterestP } from "react-icons/fa"; // Importing social media icons from React Icons
 import Image from "next/image";
-import Button from "@/components/Buttons";
-import AboutSection from "@/components/About";
-import FoodItems from "@/components/FoodItems";
-import MenuItems from "@/components/MenuItems";
-import Footer from "@/components/Footer";
+import Button from "../components/Buttons";
+import AboutSection from "../components/About";
+import FoodItems from "../components/FoodItems";
+import MenuItems from "../components/MenuItems";
+import Footer from "../components/Footer";
 import { CiPlay1 } from "react-icons/ci";
 import { AiOutlineLike } from "react-icons/ai";
 import { LiaCommentSolid } from "react-icons/lia";

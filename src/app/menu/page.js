@@ -2,8 +2,8 @@ import HeroSection from "@/components/HeroSection";
 import React from "react";
 import "../../app/globals.css";
 import Image from "next/image";
-import FoodItems from "@/components/FoodItems";
-import Footer from "@/components/Footer";
+import FoodItems from "../../components/FoodItems";
+import Footer from "../../components/Footer";
 
 export default function page() {
   return (
