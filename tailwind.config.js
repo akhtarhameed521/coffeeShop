@@ -19,6 +19,8 @@ module.exports = {
       textColor:{
         primary: '#FF9F0D'
       },
+
+     
       
     },
   },

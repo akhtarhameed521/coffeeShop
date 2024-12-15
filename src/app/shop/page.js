@@ -15,7 +15,7 @@ import {
 import HeroSection from "@/components/HeroSection";
 import { IoIosStar } from "react-icons/io";
 import { AiOutlineSearch } from "react-icons/ai";
-import Footer from "@/components/Footer";
+import { useRouter } from "next/navigation";
 
 const HomePage = () => {
   const foodImages = [
@@ -40,6 +40,8 @@ const HomePage = () => {
   const handlePriceChange = (event, newValue) => {
     setPriceRange(newValue);
   };
+
+  const router = useRouter()
 
   return (
     <>
@@ -71,7 +73,7 @@ const HomePage = () => {
             </div>
 
             {/* Food Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 cursor-pointer " onClick={()=> router.push('/shopList') } >
               {foodImages.map((src, index) => (
                 <div
                   key={index}
@@ -209,7 +211,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      
     </>
   );
 };

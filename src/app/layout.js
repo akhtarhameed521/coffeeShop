@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import "@fontsource/great-vibes";
 import Navbar2 from "@/components/Navbar2";
 import { usePathname } from "next/navigation";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         )}
 
         {children}
+      <Footer/>
       </body>
     </html>
   );

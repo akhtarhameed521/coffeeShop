@@ -109,9 +109,11 @@ export default function Navbar2() {
                 </IconButton>
               </Grid>
               <Grid item>
+                <Link href={'/shopping'} >
                 <IconButton sx={{ color: "white", "&:hover": { color: "#FF9F0D" } }}>
                   <MdOutlineShoppingBag size={24} />
                 </IconButton>
+                </Link>
               </Grid>
               <Grid item>
                 <IconButton sx={{ color: "white", "&:hover": { color: "#FF9F0D" } }}>

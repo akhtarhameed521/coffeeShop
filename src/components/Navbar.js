@@ -15,6 +15,7 @@ import { LuSearch } from "react-icons/lu";
 import { MdOutlineShoppingBag, MdMenu } from "react-icons/md";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -37,6 +38,7 @@ export default function Navbar() {
     setDrawerOpen(!drawerOpen);
   };
 
+  const router = useRouter()
   return (
   
       <Box
@@ -164,9 +166,12 @@ export default function Navbar() {
                   </Box>
                 </Grid>
                 <Grid item xs={4}>
-                  <IconButton>
-                    <MdOutlineShoppingBag style={{ color: "white" }} />
-                  </IconButton>
+                    <Link href={'/shopping'} >
+                    <IconButton  >
+                      <MdOutlineShoppingBag style={{ color: "white" }} />
+                    </IconButton>
+                    </Link>
+                 
                 </Grid>
               </Grid>
             )}
