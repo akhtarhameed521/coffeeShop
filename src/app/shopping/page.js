@@ -2,6 +2,7 @@ import HeroSection from "../../components/HeroSection";
 import Image from "next/image";
 import React from "react";
 import { FaStar } from "react-icons/fa6";
+import Footer from "../../components/Footer";
 
 
 export default function CartPage() {
@@ -167,7 +168,7 @@ export default function CartPage() {
     </div>
   </div>
 </div>
-
+        <Footer/>
     </>
   );
 }

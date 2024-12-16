@@ -16,6 +16,7 @@ import HeroSection from "../../components/HeroSection";
 import { IoIosStar } from "react-icons/io";
 import { AiOutlineSearch } from "react-icons/ai";
 import { useRouter } from "next/navigation";
+import Footer from "../../components/Footer";
 
 const HomePage = () => {
   const foodImages = [
@@ -211,7 +212,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      
+      <Footer/>
     </>
   );
 };

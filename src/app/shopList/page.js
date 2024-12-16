@@ -10,6 +10,7 @@ import {
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 import { IoArrowBackCircle } from "react-icons/io5";
 import { IoArrowForwardCircleSharp } from "react-icons/io5";
+import Footer from "../../components/Footer";
 
 
 
@@ -187,6 +188,7 @@ export default function Page() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }
