@@ -34,7 +34,7 @@ export default function Navbar2() {
     { name: "pages", href: "/pages" },
     { name: "about", href: "/about" },
     { name: "shop", href: "/shop" },
-    { name: "contact", href: "/contact" },
+    { name: "contact", href: "/signin" },
   ];
 
   return (
@@ -116,9 +116,11 @@ export default function Navbar2() {
                 </Link>
               </Grid>
               <Grid item>
+                <Link href={'signup'} >
                 <IconButton sx={{ color: "white", "&:hover": { color: "#FF9F0D" } }}>
                   <MdOutlineAccountCircle size={24} />
                 </IconButton>
+                </Link>
               </Grid>
             </Grid>
           )}

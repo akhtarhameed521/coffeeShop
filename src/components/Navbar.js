@@ -30,7 +30,7 @@ export default function Navbar() {
     { name: "pages", href: "/pages" },
     { name: "about", href: "/about" },
     { name: "shop", href: "/shop" },
-    { name: "contact", href: "/contact" },
+    { name: "contact", href: "/signin" },
   ];
 
   // Toggle the Drawer
