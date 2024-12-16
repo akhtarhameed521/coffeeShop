@@ -43,11 +43,12 @@ export default function Navbar() {
   
       <Box
         component="nav"
+       
         sx={{
           padding: "1rem",
           position: "sticky",
           top: 0, // Set the top offset
-          zIndex: 1000, // Ensure it stays on top of other elements
+          zIndex: 20, // Ensure it stays on top of other elements
           background: "#0D0D0DF2",
         }}
       >

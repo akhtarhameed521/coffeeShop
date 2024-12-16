@@ -43,6 +43,7 @@ body {
   background-image: url('/foodItems.png');
   background-size: cover; /* Ensure the background covers the container */
   background-position: center; /* Center the background */
+  background-repeat: no-repeat;
   position: relative;
   color: #ffffff;
 }
@@ -67,3 +68,22 @@ body {
   background-color:#FF9F0D;
 }
 
+.about-bg{
+  background-image: url('/about3.png');
+  background-size: contain; /* Ensure the background covers the container */
+  background-position: center; /* Center the background */
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+}
+
+.about-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(251, 189, 102, 0.9); /* Dark overlay */
+  z-index: 1; /* Below content but above the background */
+}
