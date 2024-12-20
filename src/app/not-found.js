@@ -5,7 +5,7 @@ export default function Custom404() {
     return (
       <>
         <HeroSection header={'Error Page'}  title={'error'}  />
-        <div className="flex flex-col items-center justify-center h-[50vh] bg-white">
+        <div className="flex flex-col items-center text-center justify-center h-[50vh] bg-white p-10">
         {/* 404 Code */}
         <h1 className="text-6xl font-bold text-yellow-500 mb-4">404</h1>
   
